@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"go_ssm/common"
 	"go_ssm/models"
+	"golang.org/x/crypto/bcrypt"
 	"html/template"
 	"net/http"
 	"strconv"
-	"golang.org/x/crypto/bcrypt"
 )
 
 func RegisterHandler(w http.ResponseWriter, r *http.Request) {
